@@ -7,7 +7,7 @@ import "./LawyerCardSearch.scss";
 const LawyerCardSearch = () => {
   return (
     <div className="lawyer-card-container flex justify-center">
-      <div className="info flex">
+      <div className="info flex items-center">
         <div className="img">
           <img src={lawyer} alt="lawyer" />
         </div>

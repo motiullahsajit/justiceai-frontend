@@ -322,7 +322,7 @@ const SearchLawyer: React.FC = () => {
             ))}
           </form>
         </div>
-        {/* Product grid */}
+
         <div className="lg:col-span-4 w-full p-5">
           <div className="info flex justify-between mt-5 mb-5">
             <div className="count">
