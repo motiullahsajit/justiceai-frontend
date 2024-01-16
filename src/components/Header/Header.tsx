@@ -1,14 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Modal } from "@mui/material";
 import logo from "../../assets/images/logo.png";
-import "./Header.scss";
+import CaseChat from "../CaseChat/CaseChat";
 import {
   faChevronDown,
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
 
+import "./Header.scss";
+
 const Header = () => {
+  const [query, setQuery] = useState<string>("");
+  const [isChatOpen, setIsChatOpen] = useState<boolean>(false);
+
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setQuery(event.target.value);
+  };
+
+  useEffect(() => {
+    if (query.startsWith("ask/")) {
+      setIsChatOpen(true);
+    }
+  }, [query]);
+
+  const handleCloseChat = () => {
+    setIsChatOpen(false);
+  };
+
   return (
     <nav className="navbar-container flex justify-center">
       <header className="header flex justify-around items-center">
@@ -45,10 +65,20 @@ const Header = () => {
         </div>
         <div className="search-bar flex items-center">
           <input
-            type="search"
+            type="text"
+            value={query}
+            onChange={handleInputChange}
+            placeholder="Type here..."
             className="search-input"
-            placeholder="Stakeholders took my share"
           />
+
+          <Modal
+            open={isChatOpen}
+            onClose={handleCloseChat}
+            className="chat-modal"
+          >
+              <CaseChat />
+          </Modal>
           <FontAwesomeIcon className="search-icon" icon={faMagnifyingGlass} />
         </div>
         <div className="auth">

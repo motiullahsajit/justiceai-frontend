@@ -6,7 +6,6 @@ import "./App.scss";
 
 const Home = lazy(() => import("./pages/Home/Home"));
 const SearchLawyer = lazy(() => import("./pages/SearchLawyer/SearchLawyer"));
-const SolvePrompt = lazy(() => import("./pages/SolvePrompt/SolvePrompt"));
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/search" element={<SearchLawyer />} />
-          <Route path="/solve" element={<SolvePrompt />} />
         </Routes>
       </Suspense>
     </Router>
