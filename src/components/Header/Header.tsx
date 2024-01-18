@@ -32,15 +32,17 @@ const Header = () => {
   return (
     <nav className="navbar-container flex justify-center">
       <header className="header flex justify-around items-center">
-        <div className="logo flex justify-center items-center">
-          <div className="logo-container">
-            <img src={logo} alt="justiceai" />
+        <Link to="/">
+          <div className="logo flex justify-center items-center">
+            <div className="logo-container">
+              <img src={logo} alt="justiceai" />
+            </div>
+            <div className="title-container">
+              <h5>Justice.AI</h5>
+              <p>Legal Services</p>
+            </div>
           </div>
-          <div className="title-container">
-            <h5>Justice.AI</h5>
-            <p>Legal Services</p>
-          </div>
-        </div>
+        </Link>
         <div className="nav-links">
           <Link to="/services">
             Services{" "}
@@ -77,7 +79,7 @@ const Header = () => {
             onClose={handleCloseChat}
             className="chat-modal"
           >
-              <CaseChat />
+            <CaseChat />
           </Modal>
           <FontAwesomeIcon className="search-icon" icon={faMagnifyingGlass} />
         </div>

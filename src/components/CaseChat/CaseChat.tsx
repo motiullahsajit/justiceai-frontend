@@ -97,7 +97,7 @@ const CaseChat: React.FC = () => {
 
   return (
     <div className="case-chat">
-      <div className="chat-body" ref={chatBodyRef}>
+      <div className="case-chat-body" ref={chatBodyRef}>
         {messages.map((message) => (
           <div
             key={message.id}

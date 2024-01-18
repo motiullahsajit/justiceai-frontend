@@ -6,7 +6,7 @@ import "./LawyerCardSearch.scss";
 
 const LawyerCardSearch = () => {
   return (
-    <div className="lawyer-card-container flex justify-center">
+    <section className="lawyer-card-container flex justify-center">
       <div className="info flex items-center">
         <div className="img">
           <img src={lawyer} alt="lawyer" />
@@ -51,7 +51,7 @@ const LawyerCardSearch = () => {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
