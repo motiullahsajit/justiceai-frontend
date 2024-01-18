@@ -6,6 +6,7 @@ import "./App.scss";
 
 const Home = lazy(() => import("./pages/Home/Home"));
 const SearchLawyer = lazy(() => import("./pages/SearchLawyer/SearchLawyer"));
+const ChatView = lazy(() => import("./pages/ChatView/ChatView"));
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/search" element={<SearchLawyer />} />
+          <Route path="/messages" element={<ChatView />} />
         </Routes>
       </Suspense>
     </Router>
