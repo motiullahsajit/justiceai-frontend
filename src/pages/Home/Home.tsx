@@ -9,75 +9,100 @@ import {
   faThumbsDown,
   faThumbsUp,
 } from "@fortawesome/free-solid-svg-icons";
-import statue from "../../assets/images/statue.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
   faLinkedin,
   faSquareXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import statue from "../../assets/images/statue.png";
+
+import about1 from "../../assets/images/about1.png";
+import about2 from "../../assets/images/about2.png";
+import about3 from "../../assets/images/about3.png";
+
+import "./Home.scss";
 
 const Home = () => {
   return (
     <main>
       <section className="hero-container">
-        <div>
-          <h1>
-            The Right Lawyer Make All <br />
-            The Difference.{" "}
-          </h1>
-          <p>
-            We know how large objects will act, but things on a <br />
-            small scale just do not act that way.
-          </p>
-          <button>Get Legal Advice</button>
-        </div>
-        <div>
-          <img src={statue} alt="justice" />
-        </div>
-      </section>
-      <section className="client-count">
-        <div>
-          <h1>1500+</h1>
-          <p>Happy Clients</p>
-        </div>
-        <div>
-          <h1>1500+</h1>
-          <p>Happy Clients</p>
-        </div>
-        <div>
-          <h1>1500+</h1>
-          <p>Happy Clients</p>
-        </div>
-        <div>
-          <h1>1500+</h1>
-          <p>Happy Clients</p>
-        </div>
-      </section>
-      <section className="about-us">
-        <div className="left">
-          <img src="" alt="" />
-        </div>
-        <div className="right">
+        <div className="hero">
           <div>
-            <img src="" alt="" />
-            <img src="" alt="" />
+            <h1>
+              The Right Lawyer Make All <br />
+              The Difference.{" "}
+            </h1>
+            <p>
+              We know how large objects will act, but things on a <br />
+              small scale just do not act that way.
+            </p>
+            <button>Get Legal Advice</button>
           </div>
-          <p>
-            <FontAwesomeIcon icon={faCircleCheck} /> Our team brings years of
-            collective experience in different legal fields, ensuring <br />
-            the information provided is reliable and comprehensive.
-          </p>
-          <p>
-            <FontAwesomeIcon icon={faCircleCheck} />
-            Stay informed with the latest legal news, policy changes, and case
-            studies.
-          </p>
-          <p>
-            <FontAwesomeIcon icon={faCircleCheck} /> Engage with others, share
-            your stories, and seek advice in our vibrant <br />
-            community forum.
-          </p>
+          <div>
+            <img src={statue} alt="justice" />
+          </div>
+        </div>
+      </section>
+      <section className="client-count-container">
+        <div className="client-count">
+          <div>
+            <h1>1500+</h1>
+            <p>Happy Clients</p>
+          </div>
+          <div>
+            <h1>1500+</h1>
+            <p>Happy Clients</p>
+          </div>
+          <div>
+            <h1>1500+</h1>
+            <p>Happy Clients</p>
+          </div>
+          <div>
+            <h1>1500+</h1>
+            <p>Happy Clients</p>
+          </div>
+        </div>
+      </section>
+      <section className="about-us-container">
+        <div className="about-us">
+          <h1>About Us</h1>
+          <div className="info-div">
+            <div className="left">
+              <img src={about1} alt="about1" />
+            </div>
+            <div className="right">
+              <div className="img-container">
+                <img src={about2} alt="about2" />
+                <img src={about3} alt="about3" />
+              </div>
+              <div className="text-container">
+                <li>
+                  <FontAwesomeIcon icon={faCircleCheck} />
+                  <p>
+                    Our team brings years of collective experience in different
+                    legal fields, ensuring <br />
+                    the information provided is reliable and comprehensive.
+                  </p>
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faCircleCheck} />
+                  <p>
+                    Stay informed with the latest legal news, policy changes,
+                    and case studies.
+                  </p>
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faCircleCheck} />
+                  <p>
+                    Engage with others, share your stories, and seek advice in
+                    our vibrant <br />
+                    community forum.
+                  </p>
+                </li>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section className="legal-services">
