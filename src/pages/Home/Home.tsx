@@ -17,6 +17,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import statue from "../../assets/images/statue.png";
 
+import logo2 from "../../assets/images/logo2.png";
+
 import about1 from "../../assets/images/about1.png";
 import about2 from "../../assets/images/about2.png";
 import about3 from "../../assets/images/about3.png";
@@ -126,10 +128,10 @@ const Home = () => {
           <h1>Legal Services</h1>
           <div className="flex justify-between">
             <div className="service">
-              <div>
+              <div className="left">
                 <img src={legal1} alt="legal" />
               </div>
-              <div>
+              <div className="right">
                 <h3>Legal Insights Hub</h3>
                 <p>
                   Curious about how your legal journey unfolds today? Dive into
@@ -138,10 +140,10 @@ const Home = () => {
               </div>
             </div>
             <div className="service">
-              <div>
+              <div className="left">
                 <img src={legal2} alt="legal" />
               </div>
-              <div>
+              <div className="right">
                 <h3>Justice Navigator</h3>
                 <p>
                   Curious about how your legal journey unfolds today? Dive into
@@ -152,10 +154,10 @@ const Home = () => {
           </div>
           <div className="flex justify-between">
             <div className="service">
-              <div>
+              <div className="left">
                 <img src={legal3} alt="legal" />
               </div>
-              <div>
+              <div className="right">
                 <h3>Compatibility</h3>
                 <p>
                   Curious about how your legal journey unfolds today? Dive into
@@ -164,10 +166,10 @@ const Home = () => {
               </div>
             </div>
             <div className="service">
-              <div>
+              <div className="left">
                 <img src={legal4} alt="legal" />
               </div>
-              <div>
+              <div className="right">
                 <h3>Festival 2023</h3>
                 <p>
                   Curious about how your legal journey unfolds today? Dive into
@@ -267,11 +269,10 @@ const Home = () => {
           <h1>Meet Our Attorneys</h1>
           <p>
             Meet our experienced attorneys who are dedicated to providing
-            top-notch legal representation.
-            <br /> From criminal defense to civil litigation, our team has the
-            knowledge and skills to handle any <br />
-            case Get in touch with us today to schedule a consultation with one
-            of our lawyers
+            top-notch legal representation. From criminal defense to civil
+            litigation, our team has the knowledge and skills to handle any case
+            Get in touch with us today to schedule a consultation with one of
+            our lawyers
           </p>
           <div className="peoples flex justify-between mt-10">
             <div className="people">
@@ -351,90 +352,96 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="contact">
-        <h1>Contact US</h1>
-        <h6>Reach OUt for Expert Legal Support</h6>
-        <div>
-          <div>
-            <div className="icon">
-              <FontAwesomeIcon icon={faLocationDot} />
+      <section className="contact-container">
+        <div className="contact">
+          <h1>Contact US</h1>
+          <h6>Reach OUt for Expert Legal Support</h6>
+          <div className="flex justify-between mt-10">
+            <div className="info-container">
+              <div className="info">
+                <div className="icon">
+                  <FontAwesomeIcon icon={faLocationDot} />
+                </div>
+                <div>
+                  <h3>Address</h3>
+                  <p>Dhaka Mirpur,12000</p>
+                </div>
+              </div>
+              <div className="info">
+                <div className="icon">
+                  <FontAwesomeIcon icon={faPhone} />
+                </div>
+                <div>
+                  <h3>Phone</h3>
+                  <p>01644859378</p>
+                </div>
+              </div>
+              <div className="info">
+                <div className="icon">
+                  <FontAwesomeIcon icon={faEnvelope} />
+                </div>
+                <div>
+                  <h3>Email</h3>
+                  <p>nomanabdullah2605@gmail.com</p>
+                </div>
+              </div>
             </div>
-            <div>
-              <h3>Address</h3>
-              <p>Dhaka Mirpur,12000</p>
+            <div className="form">
+              <h3>Send Message</h3>
+              <input type="text" placeholder="Full Name" />
+              <input type="text" placeholder="Email" />
+              <input type="text" placeholder="Type Your Message" />
+              <button>Send</button>
             </div>
           </div>
-          <div>
-            <div className="icon">
-              <FontAwesomeIcon icon={faPhone} />
-            </div>
-            <div>
-              <h3>Phone</h3>
-              <p>01644859378</p>
-            </div>
-          </div>
-          <div>
-            <div className="icon">
-              <FontAwesomeIcon icon={faEnvelope} />
-            </div>
-            <div>
-              <h3>Email</h3>
-              <p>nomanabdullah2605@gmail.com</p>
-            </div>
-          </div>
-        </div>
-        <div className="form">
-          <h3>Send Message</h3>
-          <input type="text" placeholder="Full Name" />
-          <input type="text" placeholder="Email" />
-          <input type="text" placeholder="Type Your Message" />
-          <button>Send</button>
         </div>
       </section>
-      <footer>
-        <section className="top">
-          <div>
-            <img src="" alt="" />
+      <footer className="footer-container">
+        <section className="footer">
+          <section className="top">
+            <div>
+              <img src={logo2} alt="justice" className="mb-5" />
+              <p>
+                Legal Assistance at Your <br /> Fingertips
+              </p>
+              <div className="social">
+                <FontAwesomeIcon icon={faSquareXTwitter} />
+                <FontAwesomeIcon icon={faFacebook} />
+                <FontAwesomeIcon icon={faLinkedin} />
+              </div>
+            </div>
+            <div>
+              <ul>
+                <li>Discover</li>
+                <li>About Us</li>
+                <li>Practice Area</li>
+                <li>Case Result</li>
+                <li>Attorneys</li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li>Support</li>
+                <li>Services</li>
+                <li>FAQ</li>
+                <li>Career</li>
+              </ul>
+            </div>
+            <div>
+              <h3>
+                Inform to inspire, <br /> with Legaltrend
+              </h3>
+              <div>
+                <input type="text" placeholder="Email" />
+                <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+              </div>
+            </div>
+          </section>
+          <section className="bottom">
             <p>
-              Legal Assistance at Your <br /> Fingertips
+              <FontAwesomeIcon icon={faCopyright} /> Justice.Al
             </p>
-            <div>
-              <FontAwesomeIcon icon={faSquareXTwitter} />
-              <FontAwesomeIcon icon={faFacebook} />
-              <FontAwesomeIcon icon={faLinkedin} />
-            </div>
-          </div>
-          <div>
-            <ul>
-              <li>Discover</li>
-              <li>About Us</li>
-              <li>Practice Area</li>
-              <li>Case Result</li>
-              <li>Attorneys</li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li>Support</li>
-              <li>Services</li>
-              <li>FAQ</li>
-              <li>Career</li>
-            </ul>
-          </div>
-          <div>
-            <h3>
-              Inform to inspire, <br /> with Legaltrend
-            </h3>
-            <div>
-              <input type="text" placeholder="Email" />
-              <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-            </div>
-          </div>
-        </section>
-        <section className="bottom">
-          <p>
-            <FontAwesomeIcon icon={faCopyright} /> Justice.Al
-          </p>
+          </section>
         </section>
       </footer>
     </main>
