@@ -21,6 +21,22 @@ import about1 from "../../assets/images/about1.png";
 import about2 from "../../assets/images/about2.png";
 import about3 from "../../assets/images/about3.png";
 
+import legal1 from "../../assets/images/legal1.png";
+import legal2 from "../../assets/images/legal2.png";
+import legal3 from "../../assets/images/legal3.png";
+import legal4 from "../../assets/images/legal4.png";
+
+import blog1 from "../../assets/images/blog1.png";
+import blog2 from "../../assets/images/blog2.png";
+import blog3 from "../../assets/images/blog3.png";
+
+import people1 from "../../assets/images/people1.png";
+import people2 from "../../assets/images/people2.png";
+import people3 from "../../assets/images/people3.png";
+import people4 from "../../assets/images/people4.png";
+import people5 from "../../assets/images/people5.png";
+import people6 from "../../assets/images/people6.png";
+
 import "./Home.scss";
 
 const Home = () => {
@@ -105,139 +121,233 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="legal-services">
-        <h1>Legal Services</h1>
-        <div>
-          <div>
-            <div>
-              <img src="" alt="" />
+      <section className="legal-services-container">
+        <div className="legal-services">
+          <h1>Legal Services</h1>
+          <div className="flex justify-between">
+            <div className="service">
+              <div>
+                <img src={legal1} alt="legal" />
+              </div>
+              <div>
+                <h3>Legal Insights Hub</h3>
+                <p>
+                  Curious about how your legal journey unfolds today? Dive into
+                  our Legal Insights Hub{" "}
+                </p>
+              </div>
             </div>
-            <div>
-              <h3>Legal Insights Hub</h3>
-              <p>
-                Curious about how your legal journey unfolds today? Dive into
-                our Legal Insights Hub{" "}
-              </p>
-            </div>
-          </div>
-          <div>
-            <div>
-              <img src="" alt="" />
-            </div>
-            <div>
-              <h3>Justice Navigator</h3>
-              <p>
-                Curious about how your legal journey unfolds today? Dive into
-                our Legal Insights Hub{" "}
-              </p>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div>
-            <div>
-              <img src="" alt="" />
-            </div>
-            <div>
-              <h3>Compatibility</h3>
-              <p>
-                Curious about how your legal journey unfolds today? Dive into
-                our Legal Insights Hub{" "}
-              </p>
+            <div className="service">
+              <div>
+                <img src={legal2} alt="legal" />
+              </div>
+              <div>
+                <h3>Justice Navigator</h3>
+                <p>
+                  Curious about how your legal journey unfolds today? Dive into
+                  our Legal Insights Hub{" "}
+                </p>
+              </div>
             </div>
           </div>
-          <div>
-            <div>
-              <img src="" alt="" />
+          <div className="flex justify-between">
+            <div className="service">
+              <div>
+                <img src={legal3} alt="legal" />
+              </div>
+              <div>
+                <h3>Compatibility</h3>
+                <p>
+                  Curious about how your legal journey unfolds today? Dive into
+                  our Legal Insights Hub{" "}
+                </p>
+              </div>
             </div>
-            <div>
-              <h3>Festival 2023</h3>
-              <p>
-                Curious about how your legal journey unfolds today? Dive into
-                our Legal Insights Hub{" "}
-              </p>
+            <div className="service">
+              <div>
+                <img src={legal4} alt="legal" />
+              </div>
+              <div>
+                <h3>Festival 2023</h3>
+                <p>
+                  Curious about how your legal journey unfolds today? Dive into
+                  our Legal Insights Hub{" "}
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="our-blog">
-        <h1>Our Blog</h1>
-        <div className="blog-card">
-          <div className="img">
-            <img src="" alt="" />
-          </div>
-          <div className="info">
-            <h6>20th, January, 2023</h6>
-            <h3>
-              Supreme Court To Hear <br /> Voter ID case on
-            </h3>
-            <div>
-              <FontAwesomeIcon icon={faComment} />
-              <FontAwesomeIcon icon={faThumbsUp} />
-              <FontAwesomeIcon icon={faThumbsDown} />
+      <section className="blog-container">
+        <div className="blog">
+          <h1>Our Blog</h1>
+          <div className="blog-card">
+            <div className="info flex">
+              <img src={blog1} alt="blog" />
+              <div className="text">
+                <h6>20th, January, 2023</h6>
+                <h3>
+                  Supreme Court To Hear <br /> Voter ID case on
+                </h3>
+                <div className="ratings">
+                  <span>
+                    <FontAwesomeIcon icon={faComment} /> 14
+                  </span>
+                  <span>
+                    <FontAwesomeIcon icon={faThumbsUp} /> 14
+                  </span>
+                  <span>
+                    <FontAwesomeIcon icon={faThumbsDown} /> 14
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="goto-button">
+              <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
             </div>
           </div>
-          <div className="goto-button">
-            <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-          </div>
-        </div>
-        <div className="blog-card">
-          <div className="img">
-            <img src="" alt="" />
-          </div>
-          <div className="info">
-            <h6>20th, January, 2023</h6>
-            <h3>
-              Supreme Court To Hear <br /> Voter ID case on
-            </h3>
-            <div>
-              <FontAwesomeIcon icon={faComment} />
-              <FontAwesomeIcon icon={faThumbsUp} />
-              <FontAwesomeIcon icon={faThumbsDown} />
+          <div className="blog-card">
+            <div className="info flex">
+              <img src={blog2} alt="blog" />
+              <div className="text">
+                <h6>20th, January, 2023</h6>
+                <h3>
+                  Supreme Court To Hear <br /> Voter ID case on
+                </h3>
+                <div className="ratings">
+                  <span>
+                    <FontAwesomeIcon icon={faComment} /> 14
+                  </span>
+                  <span>
+                    <FontAwesomeIcon icon={faThumbsUp} /> 14
+                  </span>
+                  <span>
+                    <FontAwesomeIcon icon={faThumbsDown} /> 14
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="goto-button">
+              <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
             </div>
           </div>
-          <div className="goto-button">
-            <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-          </div>
-        </div>
-        <div className="blog-card">
-          <div className="img">
-            <img src="" alt="" />
-          </div>
-          <div className="info">
-            <h6>20th, January, 2023</h6>
-            <h3>
-              Supreme Court To Hear <br /> Voter ID case on
-            </h3>
-            <div>
-              <FontAwesomeIcon icon={faComment} />
-              <FontAwesomeIcon icon={faThumbsUp} />
-              <FontAwesomeIcon icon={faThumbsDown} />
+          <div className="blog-card">
+            <div className="info flex">
+              <img src={blog3} alt="blog" />
+              <div className="text">
+                <h6>20th, January, 2023</h6>
+                <h3>
+                  Supreme Court To Hear <br /> Voter ID case on
+                </h3>
+                <div className="ratings">
+                  <span>
+                    <FontAwesomeIcon icon={faComment} /> 14
+                  </span>
+                  <span>
+                    <FontAwesomeIcon icon={faThumbsUp} /> 14
+                  </span>
+                  <span>
+                    <FontAwesomeIcon icon={faThumbsDown} /> 14
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="goto-button">
+              <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
             </div>
           </div>
-          <div className="goto-button">
-            <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+
+          <div className="flex justify-center mt-10">
+            <button>See All</button>
           </div>
         </div>
-        <button>See All</button>
       </section>
-      <section className="attorneys">
-        <h1>Meet Our Attorneys</h1>
-        <p>
-          Meet our experienced attorneys who are dedicated to providing
-          top-notch legal representation. From criminal defense to civil
-          litigation, our team has the knowledge and skills to handle any case
-          Get in touch with us today to schedule a consultation with one of our
-          lawyers
-        </p>
-        <div className="people">
-          <img src="" alt="" />
-          <h3>Kevin Anderson</h3>
-          <h5>Bankruptcy Law</h5>
-          <div>
-            <FontAwesomeIcon icon={faSquareXTwitter} />
-            <FontAwesomeIcon icon={faFacebook} />
-            <FontAwesomeIcon icon={faLinkedin} />
+      <section className="attorneys-container">
+        <div className="attorneys">
+          <h1>Meet Our Attorneys</h1>
+          <p>
+            Meet our experienced attorneys who are dedicated to providing
+            top-notch legal representation.
+            <br /> From criminal defense to civil litigation, our team has the
+            knowledge and skills to handle any <br />
+            case Get in touch with us today to schedule a consultation with one
+            of our lawyers
+          </p>
+          <div className="peoples flex justify-between mt-10">
+            <div className="people">
+              <img src={people1} alt="attorneys" />
+              <div className="info">
+                <h3>Kevin Anderson</h3>
+                <h5>Bankruptcy Law</h5>
+                <div className="social">
+                  <FontAwesomeIcon icon={faSquareXTwitter} />
+                  <FontAwesomeIcon icon={faFacebook} />
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </div>
+              </div>
+            </div>
+            <div className="people">
+              <img src={people2} alt="attorneys" />
+              <div className="info">
+                <h3>Kevin Anderson</h3>
+                <h5>Bankruptcy Law</h5>
+                <div className="social">
+                  <FontAwesomeIcon icon={faSquareXTwitter} />
+                  <FontAwesomeIcon icon={faFacebook} />
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </div>
+              </div>
+            </div>
+            <div className="people">
+              <img src={people3} alt="attorneys" />
+              <div className="info">
+                <h3>Kevin Anderson</h3>
+                <h5>Bankruptcy Law</h5>
+                <div className="social">
+                  <FontAwesomeIcon icon={faSquareXTwitter} />
+                  <FontAwesomeIcon icon={faFacebook} />
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="peoples flex justify-between">
+            <div className="people">
+              <img src={people4} alt="attorneys" />
+              <div className="info">
+                <h3>Kevin Anderson</h3>
+                <h5>Bankruptcy Law</h5>
+                <div className="social">
+                  <FontAwesomeIcon icon={faSquareXTwitter} />
+                  <FontAwesomeIcon icon={faFacebook} />
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </div>
+              </div>
+            </div>
+            <div className="people">
+              <img src={people5} alt="attorneys" />
+              <div className="info">
+                <h3>Kevin Anderson</h3>
+                <h5>Bankruptcy Law</h5>
+                <div className="social">
+                  <FontAwesomeIcon icon={faSquareXTwitter} />
+                  <FontAwesomeIcon icon={faFacebook} />
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </div>
+              </div>
+            </div>
+            <div className="people">
+              <img src={people6} alt="attorneys" />
+              <div className="info">
+                <h3>Kevin Anderson</h3>
+                <h5>Bankruptcy Law</h5>
+                <div className="social">
+                  <FontAwesomeIcon icon={faSquareXTwitter} />
+                  <FontAwesomeIcon icon={faFacebook} />
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
