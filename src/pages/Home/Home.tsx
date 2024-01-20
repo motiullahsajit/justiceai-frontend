@@ -1,23 +1,6 @@
-import {
-  faArrowUpRightFromSquare,
-  faCircleCheck,
-  faComment,
-  faCopyright,
-  faEnvelope,
-  faLocationDot,
-  faPhone,
-  faThumbsDown,
-  faThumbsUp,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebook,
-  faLinkedin,
-  faSquareXTwitter,
-} from "@fortawesome/free-brands-svg-icons";
 import statue from "../../assets/images/statue.png";
-
-import logo2 from "../../assets/images/logo2.png";
 
 import about1 from "../../assets/images/about1.png";
 import about2 from "../../assets/images/about2.png";
@@ -28,16 +11,10 @@ import legal2 from "../../assets/images/legal2.png";
 import legal3 from "../../assets/images/legal3.png";
 import legal4 from "../../assets/images/legal4.png";
 
-import blog1 from "../../assets/images/blog1.png";
-import blog2 from "../../assets/images/blog2.png";
-import blog3 from "../../assets/images/blog3.png";
-
-import people1 from "../../assets/images/people1.png";
-import people2 from "../../assets/images/people2.png";
-import people3 from "../../assets/images/people3.png";
-import people4 from "../../assets/images/people4.png";
-import people5 from "../../assets/images/people5.png";
-import people6 from "../../assets/images/people6.png";
+import Blog from "../../components/Blog/Blog";
+import Attorneys from "../../components/Attorneys/Attorneys";
+import Contact from "../../components/Contact/Contact";
+import Footer from "../../components/Footer/Footer";
 
 import "./Home.scss";
 
@@ -47,10 +24,7 @@ const Home = () => {
       <section className="hero-container">
         <div className="hero">
           <div>
-            <h1>
-              The Right Lawyer Make All <br />
-              The Difference.{" "}
-            </h1>
+            <h1>The Right Lawyer Make All The Difference. </h1>
             <p>
               We know how large objects will act, but things on a <br />
               small scale just do not act that way.
@@ -180,270 +154,10 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="blog-container">
-        <div className="blog">
-          <h1>Our Blog</h1>
-          <div className="blog-card">
-            <div className="info flex">
-              <img src={blog1} alt="blog" />
-              <div className="text">
-                <h6>20th, January, 2023</h6>
-                <h3>
-                  Supreme Court To Hear <br /> Voter ID case on
-                </h3>
-                <div className="ratings">
-                  <span>
-                    <FontAwesomeIcon icon={faComment} /> 14
-                  </span>
-                  <span>
-                    <FontAwesomeIcon icon={faThumbsUp} /> 14
-                  </span>
-                  <span>
-                    <FontAwesomeIcon icon={faThumbsDown} /> 14
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="goto-button">
-              <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-            </div>
-          </div>
-          <div className="blog-card">
-            <div className="info flex">
-              <img src={blog2} alt="blog" />
-              <div className="text">
-                <h6>20th, January, 2023</h6>
-                <h3>
-                  Supreme Court To Hear <br /> Voter ID case on
-                </h3>
-                <div className="ratings">
-                  <span>
-                    <FontAwesomeIcon icon={faComment} /> 14
-                  </span>
-                  <span>
-                    <FontAwesomeIcon icon={faThumbsUp} /> 14
-                  </span>
-                  <span>
-                    <FontAwesomeIcon icon={faThumbsDown} /> 14
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="goto-button">
-              <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-            </div>
-          </div>
-          <div className="blog-card">
-            <div className="info flex">
-              <img src={blog3} alt="blog" />
-              <div className="text">
-                <h6>20th, January, 2023</h6>
-                <h3>
-                  Supreme Court To Hear <br /> Voter ID case on
-                </h3>
-                <div className="ratings">
-                  <span>
-                    <FontAwesomeIcon icon={faComment} /> 14
-                  </span>
-                  <span>
-                    <FontAwesomeIcon icon={faThumbsUp} /> 14
-                  </span>
-                  <span>
-                    <FontAwesomeIcon icon={faThumbsDown} /> 14
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="goto-button">
-              <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-            </div>
-          </div>
-
-          <div className="flex justify-center mt-10">
-            <button>See All</button>
-          </div>
-        </div>
-      </section>
-      <section className="attorneys-container">
-        <div className="attorneys">
-          <h1>Meet Our Attorneys</h1>
-          <p>
-            Meet our experienced attorneys who are dedicated to providing
-            top-notch legal representation. From criminal defense to civil
-            litigation, our team has the knowledge and skills to handle any case
-            Get in touch with us today to schedule a consultation with one of
-            our lawyers
-          </p>
-          <div className="peoples flex justify-between mt-10">
-            <div className="people">
-              <img src={people1} alt="attorneys" />
-              <div className="info">
-                <h3>Kevin Anderson</h3>
-                <h5>Bankruptcy Law</h5>
-                <div className="social">
-                  <FontAwesomeIcon icon={faSquareXTwitter} />
-                  <FontAwesomeIcon icon={faFacebook} />
-                  <FontAwesomeIcon icon={faLinkedin} />
-                </div>
-              </div>
-            </div>
-            <div className="people">
-              <img src={people2} alt="attorneys" />
-              <div className="info">
-                <h3>Kevin Anderson</h3>
-                <h5>Bankruptcy Law</h5>
-                <div className="social">
-                  <FontAwesomeIcon icon={faSquareXTwitter} />
-                  <FontAwesomeIcon icon={faFacebook} />
-                  <FontAwesomeIcon icon={faLinkedin} />
-                </div>
-              </div>
-            </div>
-            <div className="people">
-              <img src={people3} alt="attorneys" />
-              <div className="info">
-                <h3>Kevin Anderson</h3>
-                <h5>Bankruptcy Law</h5>
-                <div className="social">
-                  <FontAwesomeIcon icon={faSquareXTwitter} />
-                  <FontAwesomeIcon icon={faFacebook} />
-                  <FontAwesomeIcon icon={faLinkedin} />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="peoples flex justify-between">
-            <div className="people">
-              <img src={people4} alt="attorneys" />
-              <div className="info">
-                <h3>Kevin Anderson</h3>
-                <h5>Bankruptcy Law</h5>
-                <div className="social">
-                  <FontAwesomeIcon icon={faSquareXTwitter} />
-                  <FontAwesomeIcon icon={faFacebook} />
-                  <FontAwesomeIcon icon={faLinkedin} />
-                </div>
-              </div>
-            </div>
-            <div className="people">
-              <img src={people5} alt="attorneys" />
-              <div className="info">
-                <h3>Kevin Anderson</h3>
-                <h5>Bankruptcy Law</h5>
-                <div className="social">
-                  <FontAwesomeIcon icon={faSquareXTwitter} />
-                  <FontAwesomeIcon icon={faFacebook} />
-                  <FontAwesomeIcon icon={faLinkedin} />
-                </div>
-              </div>
-            </div>
-            <div className="people">
-              <img src={people6} alt="attorneys" />
-              <div className="info">
-                <h3>Kevin Anderson</h3>
-                <h5>Bankruptcy Law</h5>
-                <div className="social">
-                  <FontAwesomeIcon icon={faSquareXTwitter} />
-                  <FontAwesomeIcon icon={faFacebook} />
-                  <FontAwesomeIcon icon={faLinkedin} />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="contact-container">
-        <div className="contact">
-          <h1>Contact US</h1>
-          <h6>Reach OUt for Expert Legal Support</h6>
-          <div className="flex justify-between mt-10">
-            <div className="info-container">
-              <div className="info">
-                <div className="icon">
-                  <FontAwesomeIcon icon={faLocationDot} />
-                </div>
-                <div>
-                  <h3>Address</h3>
-                  <p>Dhaka Mirpur,12000</p>
-                </div>
-              </div>
-              <div className="info">
-                <div className="icon">
-                  <FontAwesomeIcon icon={faPhone} />
-                </div>
-                <div>
-                  <h3>Phone</h3>
-                  <p>01644859378</p>
-                </div>
-              </div>
-              <div className="info">
-                <div className="icon">
-                  <FontAwesomeIcon icon={faEnvelope} />
-                </div>
-                <div>
-                  <h3>Email</h3>
-                  <p>nomanabdullah2605@gmail.com</p>
-                </div>
-              </div>
-            </div>
-            <div className="form">
-              <h3>Send Message</h3>
-              <input type="text" placeholder="Full Name" />
-              <input type="text" placeholder="Email" />
-              <input type="text" placeholder="Type Your Message" />
-              <button>Send</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <footer className="footer-container">
-        <section className="footer">
-          <section className="top">
-            <div>
-              <img src={logo2} alt="justice" className="mb-5" />
-              <p>
-                Legal Assistance at Your <br /> Fingertips
-              </p>
-              <div className="social">
-                <FontAwesomeIcon icon={faSquareXTwitter} />
-                <FontAwesomeIcon icon={faFacebook} />
-                <FontAwesomeIcon icon={faLinkedin} />
-              </div>
-            </div>
-            <div>
-              <ul>
-                <li>Discover</li>
-                <li>About Us</li>
-                <li>Practice Area</li>
-                <li>Case Result</li>
-                <li>Attorneys</li>
-              </ul>
-            </div>
-            <div>
-              <ul>
-                <li>Support</li>
-                <li>Services</li>
-                <li>FAQ</li>
-                <li>Career</li>
-              </ul>
-            </div>
-            <div>
-              <h3>
-                Inform to inspire, <br /> with Legaltrend
-              </h3>
-              <div>
-                <input type="text" placeholder="Email" />
-                <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-              </div>
-            </div>
-          </section>
-          <section className="bottom">
-            <p>
-              <FontAwesomeIcon icon={faCopyright} /> Justice.Al
-            </p>
-          </section>
-        </section>
-      </footer>
+      <Blog />
+      <Attorneys />
+      <Contact />
+      <Footer />
     </main>
   );
 };
