@@ -11,6 +11,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import logo2 from "../../assets/images/logo2.png";
 
+import "./Footer.scss";
+
 const Footer = () => {
   return (
     <footer className="footer-container">

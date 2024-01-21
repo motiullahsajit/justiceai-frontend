@@ -12,7 +12,7 @@ interface Message {
   time: string;
 }
 
-const CaseChat: React.FC = () => {
+const CaseChat = () => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [inputText, setInputText] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);

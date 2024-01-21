@@ -1,0 +1,49 @@
+@import "../../App.scss";
+
+.footer-container {
+  background-color: $primary-color;
+  display: flex;
+  justify-content: center;
+
+  .footer {
+    width: 90%;
+    color: $text-secondary-color;
+    .top {
+      padding: 4rem 0rem;
+      display: flex;
+      justify-content: space-around;
+      p {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      .social {
+        margin: 1rem 0rem;
+        svg {
+          margin-right: 0.5rem;
+        }
+      }
+      ul > li {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+      }
+      div > h3 {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      div > input {
+        background: transparent;
+        border-bottom: 1px solid #616161;
+        margin-top: 1rem;
+      }
+    }
+    .bottom {
+      text-align: center;
+    }
+  }
+}

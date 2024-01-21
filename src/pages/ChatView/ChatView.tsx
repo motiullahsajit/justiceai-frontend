@@ -25,7 +25,7 @@ interface Message {
   senderId: number;
 }
 
-const ChatView: React.FC = () => {
+const ChatView = () => {
   const [chatPeople, setChatPeople] = useState<ChatPerson[]>([
     { id: 1, name: "John Doe" },
     { id: 2, name: "Jane Doe" },

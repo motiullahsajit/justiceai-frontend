@@ -11,6 +11,8 @@ import {
   faSquareXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
+import "./Attorneys.scss";
+
 const Attorneys = () => {
   return (
     <section className="attorneys-container">

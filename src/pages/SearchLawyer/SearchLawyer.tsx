@@ -28,7 +28,7 @@ interface Section {
   options: Option[];
 }
 
-const SearchLawyer: React.FC = () => {
+const SearchLawyer = () => {
   const [filteredPrice, setFilteredPrice] = useState<number>(0);
   const handleFileredPriceInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = Number(e.target.value);
