@@ -1,0 +1,64 @@
+@import "../../App.scss";
+
+.sidebar-container {
+  width: 95%;
+  label {
+    font-size: 18px;
+    color: $text-primary-color;
+  }
+  .filtered-price {
+    input[type="range"] {
+      width: 100%;
+      cursor: pointer;
+    }
+    span {
+      display: block;
+      background-color: $secondary-color;
+      color: $text-secondary-color;
+      font-size: 14px;
+      padding: 0.2rem;
+      border-radius: 0.2rem;
+    }
+  }
+  .single-filter {
+    margin-top: 5rem;
+  }
+  .checkbox:checked {
+    color: $secondary-color !important;
+  }
+
+  .filter-title {
+    color: $text-primary-color;
+  }
+
+  .reset-button {
+    background-color: $secondary-color;
+    font-size: 14px;
+    color: $text-secondary-color;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.2rem;
+  }
+
+  .css-vqmohf-MuiButtonBase-root-MuiRadio-root.Mui-checked {
+    color: $secondary-color !important;
+  }
+  .filters-container {
+    width: 25%;
+  }
+}
+
+.info {
+  .count {
+    font-size: 16px;
+    color: $text-primary-color;
+  }
+  span {
+    font-weight: 600;
+  }
+}
+.location {
+  font-size: 16px;
+  color: $secondary-color;
+  font-size: 1rem;
+  font-weight: 600;
+}

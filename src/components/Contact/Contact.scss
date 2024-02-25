@@ -1,0 +1,92 @@
+@import "../../App.scss";
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  background-color: #ccc;
+  padding: 3rem 0rem;
+  .contact {
+    width: 80%;
+    margin: 3rem 0rem;
+    h1 {
+      color: $primary-color;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 1.28px;
+      text-align: center;
+    }
+    h6 {
+      color: $text-primary-color;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.48px;
+      text-align: center;
+    }
+    .info-container {
+      width: 40%;
+      margin: 3rem 0rem;
+    }
+    .info {
+      display: flex;
+      align-items: center;
+      h3 {
+        color: $primary-color;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.6px;
+      }
+      p {
+        color: $text-primary-color;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.4px;
+      }
+    }
+    .icon {
+      width: 30px;
+      margin-right: 1.5rem;
+      svg {
+        font-size: 2.5rem;
+        color: $primary-color;
+      }
+    }
+    .form {
+      width: 40%;
+      border-radius: 10px;
+      background: #ccc;
+      box-shadow: 0px 0px 15px 1px rgba(97, 97, 97, 0.15);
+      padding: 2rem 1rem;
+      h3 {
+        color: $primary-color;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.6px;
+      }
+      input {
+        display: block;
+        width: 100%;
+        background: transparent;
+        border-bottom: 1px solid rgba(97, 97, 97, 0.3);
+        padding: 0.5rem;
+        margin: 1rem 0rem;
+      }
+      button {
+        background-color: $primary-color;
+        color: $text-secondary-color;
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}

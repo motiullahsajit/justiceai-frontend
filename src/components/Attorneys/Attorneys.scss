@@ -1,0 +1,57 @@
+@import "../../App.scss";
+
+.attorneys-container {
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0rem;
+  .attorneys {
+    width: 80%;
+    h1 {
+      color: $primary-color;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 1.28px;
+      text-align: center;
+      margin: 1.5rem 0rem;
+    }
+    p {
+      color: $text-primary-color;
+      text-align: center;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.4px;
+    }
+    .people {
+      padding: 0.3rem;
+      .info {
+        text-align: center;
+        h3 {
+          color: $primary-color;
+          font-size: 30px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+        h5 {
+          color: $text-primary-color;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+        .social {
+          svg {
+            margin: 0.5rem;
+            font-size: 1.2rem;
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
